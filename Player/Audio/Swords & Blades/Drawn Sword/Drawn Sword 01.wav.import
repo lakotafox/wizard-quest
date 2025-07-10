@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://brqfwyx5q2kmt"
+path="res://.godot/imported/Drawn Sword 01.wav-a122464e5b121fb85cbb782b56331f03.sample"
+
+[deps]
+
+source_file="res://Player/Audio/Swords & Blades/Drawn Sword/Drawn Sword 01.wav"
+dest_files=["res://.godot/imported/Drawn Sword 01.wav-a122464e5b121fb85cbb782b56331f03.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

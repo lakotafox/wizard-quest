@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dwur81x8x3qvt"
+path="res://.godot/imported/Sword Hit  20.wav-9de8f995b30ec33a60fd05a39ad4e365.sample"
+
+[deps]
+
+source_file="res://Player/Audio/Swords & Blades/Sword Hit/Sword Hit  20.wav"
+dest_files=["res://.godot/imported/Sword Hit  20.wav-9de8f995b30ec33a60fd05a39ad4e365.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

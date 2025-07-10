@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bqubwkn8vkq6r"
+path="res://.godot/imported/Sword Impact 01.wav-69639234ec7c646bd70f068da12e8147.sample"
+
+[deps]
+
+source_file="res://Player/Audio/Swords & Blades/Sword Impact/Sword Impact 01.wav"
+dest_files=["res://.godot/imported/Sword Impact 01.wav-69639234ec7c646bd70f068da12e8147.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
