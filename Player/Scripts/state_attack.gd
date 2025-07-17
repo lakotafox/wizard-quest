@@ -16,7 +16,7 @@ var attacking : bool = false
 ## what happens when player enters this state?
 func Enter() -> void:
 	player.UpdateAnimation("attack")
-	attack_anim.play( "attack_" + player.AnimDirection()) 
+	attack_anim.play( "attack_" + player.anim_direction()) 
 	if not animation_player.animation_finished.is_connected(EndAttack):
 		animation_player.animation_finished.connect(EndAttack)
 	
