@@ -1,17 +1,17 @@
 [gd_scene load_steps=32 format=3 uid="uid://cke0fv5ghh15i"]
 
-[ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_2oguh"]
+[ext_resource type="Script" uid="uid://cg4o4kndydkq0" path="res://Player/Scripts/player.gd" id="1_2oguh"]
 [ext_resource type="Texture2D" uid="uid://bj7ahkbt8hqwy" path="res://Player/sprites/PlayerSprite02.png" id="2_8v6sg"]
-[ext_resource type="Script" path="res://Player/Scripts/player_state_machine.gd" id="3_tgr7y"]
+[ext_resource type="Script" uid="uid://cfou70oircgrq" path="res://Player/Scripts/player_state_machine.gd" id="3_tgr7y"]
 [ext_resource type="Texture2D" uid="uid://db8ycj1fysf8a" path="res://Player/sprites/AttackSprite01.png" id="3_tpj22"]
 [ext_resource type="Texture2D" uid="uid://277tdouos1qj" path="res://Player/sprites/Shadow.png" id="4_d5p6v"]
-[ext_resource type="Script" path="res://Player/Scripts/state_idle.gd" id="4_drcgf"]
-[ext_resource type="Script" path="res://Player/Scripts/state_walk.gd" id="5_guj8i"]
-[ext_resource type="Script" path="res://Player/Scripts/state_attack.gd" id="6_0yghf"]
+[ext_resource type="Script" uid="uid://c7n4x5ae8i1hd" path="res://Player/Scripts/state_idle.gd" id="4_drcgf"]
+[ext_resource type="Script" uid="uid://bqb0aphd3gh41" path="res://Player/Scripts/state_walk.gd" id="5_guj8i"]
+[ext_resource type="Script" uid="uid://dthg7xwsku4yu" path="res://Player/Scripts/state_attack.gd" id="6_0yghf"]
 [ext_resource type="AudioStream" uid="uid://cjm8ntbapuaj5" path="res://Player/Audio/Sword Whoosh 08.wav" id="8_jy6r1"]
-[ext_resource type="Script" path="res://Player/Scripts/PlayerInteractionsHost.gd" id="10_fxq6t"]
+[ext_resource type="Script" uid="uid://b1ca4bu0vc66c" path="res://Player/Scripts/PlayerInteractionsHost.gd" id="10_fxq6t"]
 [ext_resource type="PackedScene" uid="uid://370rl3qvgf1f" path="res://GeneraNodes/HurtBox/hurt_box.tscn" id="10_gm3em"]
-[ext_resource type="Script" path="res://Player/Scripts/Playercamera.gd" id="11_eh4rg"]
+[ext_resource type="Script" uid="uid://bopvkx28y2utg" path="res://Player/Scripts/Playercamera.gd" id="11_eh4rg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_firxm"]
 
@@ -240,11 +240,11 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hwpsr"]
 _data = {
-"RESET": SubResource("Animation_34j26"),
-"attack_down": SubResource("Animation_5alc6"),
-"attack_side": SubResource("Animation_qyody"),
-"attack_up": SubResource("Animation_1cxjf"),
-"no_attack": SubResource("Animation_58oco")
+&"RESET": SubResource("Animation_34j26"),
+&"attack_down": SubResource("Animation_5alc6"),
+&"attack_side": SubResource("Animation_qyody"),
+&"attack_up": SubResource("Animation_1cxjf"),
+&"no_attack": SubResource("Animation_58oco")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7ewrf"]
@@ -465,16 +465,16 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7il41"]
 _data = {
-"RESET": SubResource("Animation_02kpt"),
-"attack_down": SubResource("Animation_n4qxs"),
-"attack_side": SubResource("Animation_q5l6c"),
-"attack_up": SubResource("Animation_u73xa"),
-"idle_down": SubResource("Animation_fcpde"),
-"idle_side": SubResource("Animation_fnoxn"),
-"idle_up": SubResource("Animation_h2rqg"),
-"walk_down": SubResource("Animation_esgfn"),
-"walk_side": SubResource("Animation_0xaaq"),
-"walk_up": SubResource("Animation_qgr3l")
+&"RESET": SubResource("Animation_02kpt"),
+&"attack_down": SubResource("Animation_n4qxs"),
+&"attack_side": SubResource("Animation_q5l6c"),
+&"attack_up": SubResource("Animation_u73xa"),
+&"idle_down": SubResource("Animation_fcpde"),
+&"idle_side": SubResource("Animation_fnoxn"),
+&"idle_up": SubResource("Animation_h2rqg"),
+&"walk_down": SubResource("Animation_esgfn"),
+&"walk_side": SubResource("Animation_0xaaq"),
+&"walk_up": SubResource("Animation_qgr3l")
 }
 
 [node name="Player" type="CharacterBody2D"]
@@ -500,7 +500,7 @@ hframes = 12
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D/Attack sprite"]
 libraries = {
-"": SubResource("AnimationLibrary_hwpsr")
+&"": SubResource("AnimationLibrary_hwpsr")
 }
 autoplay = "no_attack"
 
@@ -522,7 +522,7 @@ debug_color = Color(0.979949, 0, 0.383793, 0.42)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_7il41")
+&"": SubResource("AnimationLibrary_7il41")
 }
 
 [node name="StateMachine" type="Node" parent="."]

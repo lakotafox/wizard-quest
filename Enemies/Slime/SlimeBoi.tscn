@@ -1,11 +1,11 @@
 [gd_scene load_steps=16 format=3 uid="uid://eka8f0sm0o87"]
 
-[ext_resource type="Script" path="res://Enemies/Scripts/enemy.gd" id="1_jxfml"]
+[ext_resource type="Script" uid="uid://d4mejspr4iahe" path="res://Enemies/Scripts/enemy.gd" id="1_jxfml"]
 [ext_resource type="Texture2D" uid="uid://277tdouos1qj" path="res://Player/sprites/Shadow.png" id="1_ykeih"]
 [ext_resource type="Texture2D" uid="uid://ectta6420sl4" path="res://Enemies/Slime/Slime.png" id="2_ll2r2"]
-[ext_resource type="Script" path="res://Enemies/Scripts/enemy_state_machine.gd" id="4_tqbxa"]
-[ext_resource type="Script" path="res://Enemies/Scripts/states/enemy_state_idle.gd" id="5_kws0f"]
-[ext_resource type="Script" path="res://Enemies/Scripts/states/enemy_state_wander.gd" id="6_08wl8"]
+[ext_resource type="Script" uid="uid://dj16xgiapt4y2" path="res://Enemies/Scripts/enemy_state_machine.gd" id="4_tqbxa"]
+[ext_resource type="Script" uid="uid://s0vht04wvprb" path="res://Enemies/Scripts/states/enemy_state_idle.gd" id="5_kws0f"]
+[ext_resource type="Script" uid="uid://bkybc76id0e2e" path="res://Enemies/Scripts/states/enemy_state_wander.gd" id="6_08wl8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_453od"]
 radius = 7.0
@@ -214,13 +214,13 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7x6o0"]
 _data = {
-"RESET": SubResource("Animation_sb2n7"),
-"idle_down": SubResource("Animation_dtiss"),
-"idle_side": SubResource("Animation_iadh8"),
-"idle_up": SubResource("Animation_gia5i"),
-"walk_down": SubResource("Animation_qsie6"),
-"walk_side": SubResource("Animation_krmve"),
-"walk_up": SubResource("Animation_howgh")
+&"RESET": SubResource("Animation_sb2n7"),
+&"idle_down": SubResource("Animation_dtiss"),
+&"idle_side": SubResource("Animation_iadh8"),
+&"idle_up": SubResource("Animation_gia5i"),
+&"walk_down": SubResource("Animation_qsie6"),
+&"walk_side": SubResource("Animation_krmve"),
+&"walk_up": SubResource("Animation_howgh")
 }
 
 [node name="SlimeBoi" type="CharacterBody2D"]
@@ -234,6 +234,7 @@ position = Vector2(0, 6)
 texture = ExtResource("1_ykeih")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.815441, 0.462458, 0.346895, 1)
 position = Vector2(0, -16)
 texture = ExtResource("2_ll2r2")
 hframes = 16
@@ -245,7 +246,7 @@ shape = SubResource("CapsuleShape2D_453od")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_7x6o0")
+&"": SubResource("AnimationLibrary_7x6o0")
 }
 autoplay = "idle_down"
 
